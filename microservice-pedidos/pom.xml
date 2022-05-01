@@ -8,14 +8,13 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.microservice.producto</groupId>
-    <artifactId>microservice-producto</artifactId>
+    <groupId>com.microservicepedidos</groupId>
+    <artifactId>microservice-pedidos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>microservice-producto</name>
-    <description>microservice-producto</description>
+    <name>microservice-pedidos</name>
+    <description>microservice-pedidos</description>
     <properties>
         <java.version>11</java.version>
-        <spring-cloud.version>Hoxton.RC1</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
@@ -51,17 +50,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>3.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.microservice.commons</groupId>
-            <artifactId>microservice-commons</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
