@@ -1,5 +1,6 @@
 package com.microservice.commons.app.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.repository.PagingAndSortingRepository;
@@ -10,6 +11,7 @@ import java.util.Optional;
 
 public class CommonServiceImpl<E, R extends PagingAndSortingRepository<E, Long>> implements CommonService<E> {
 
+    @Autowired
     private R repository;
 
     @Override

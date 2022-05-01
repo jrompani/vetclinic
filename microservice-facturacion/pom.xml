@@ -8,14 +8,13 @@
         <version>2.6.7</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.microservice.producto</groupId>
-    <artifactId>microservice-producto</artifactId>
+    <groupId>com.microservicefacturacion</groupId>
+    <artifactId>microservice-facturacion</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>microservice-producto</name>
-    <description>microservice-producto</description>
+    <name>microservice-facturacion</name>
+    <description>microservice-facturacion</description>
     <properties>
         <java.version>11</java.version>
-        <spring-cloud.version>Hoxton.RC1</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
@@ -53,13 +52,14 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-            <version>3.1.0</version>
+            <groupId>com.microservice.producto</groupId>
+            <artifactId>microservice-producto</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.microservice.commons</groupId>
-            <artifactId>microservice-commons</artifactId>
+            <groupId>com.microservice.cliente</groupId>
+            <artifactId>microservice-cliente</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
