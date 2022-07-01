@@ -1,5 +1,7 @@
-package com.microservice.producto.microserviceproducto.model;
+package com.microservicepedidos.app.model;
 
+import com.microservice.cliente.app.model.Cliente;
+import com.microservicefacturacion.app.model.Factura;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,15 +12,12 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ProductoTipo {
+public class Pedido {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column
-    private String name;
-    @Column
-    private String description;
-    @Column
-    private Double price;
+
+
 }
