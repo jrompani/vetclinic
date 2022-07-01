@@ -1,0 +1,1 @@
+insert INTO direccion VALUES (1, 'Marquez', '23243', '1105', 'Martinez', 'Buenos Aires')

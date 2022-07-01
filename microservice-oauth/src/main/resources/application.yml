@@ -1,0 +1,17 @@
+server:
+  port: 8585
+error:
+  include-stracktrace: always
+jms:
+  jwt:
+    security:
+      enabled: false
+    timezone: "America/Argentina"
+    issuer: "www.pruebavetclinic.com"
+    token:
+      auth:
+        path: "/v1.0/oauth/client_credential/accesstoken"
+      secret: "subscribete en vetclinica"
+      expiresIn: 50
+    exclude:
+      path: "/v1.0/multi"
